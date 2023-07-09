@@ -17,6 +17,7 @@ Example 2:
 Input: word = "FlaG"
 Output: false
 '''
+<<<<<<< HEAD
 from typing import List
 def detectCapitalUse(word: str) -> bool:
     print(word[1:].lower())
@@ -25,3 +26,11 @@ def detectCapitalUse(word: str) -> bool:
 word = "USA"
 print(detectCapitalUse(word))
 
+=======
+
+from typing import List
+def detectCapitalUse(word: str) -> bool:
+    return word.isupper() or word.islower() or word[1:].lower() == word[1:]
+word = "USA"
+print(detectCapitalUse(word))
+>>>>>>> 1697f82 (misssing solution from day4)
