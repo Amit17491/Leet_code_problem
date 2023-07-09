@@ -20,6 +20,7 @@ Output: "First Letter of Each Word"
 Explanation:
 The word "of" has length 2, so it is all lowercase.
 The remaining words have a length of at least 3, so the first letter of each remaining word is uppercase, and the remaining letters are lowercase.
+<<<<<<< HEAD
 Example 3:
 
 Input: title = "i lOve leetcode"
@@ -28,6 +29,10 @@ Explanation:
 The word "i" has length 1, so it is lowercase.
 The remaining words have a length of at least 3, so the first letter of each remaining word is uppercase, and the remaining letters are lowercase.
 '''
+=======
+'''
+
+>>>>>>> 1697f82 (misssing solution from day4)
 from typing import List
 def capitalizeTitle(title: str) -> str:
         title = title.split()
@@ -43,4 +48,8 @@ def capitalizeTitle(title: str) -> str:
         return x
 
 title = "capiTalIze tHe titLe"
+<<<<<<< HEAD
 print(capitalizeTitle(title))
+=======
+print(capitalizeTitle(title))
+>>>>>>> 1697f82 (misssing solution from day4)

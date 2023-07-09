@@ -16,6 +16,7 @@ Explanation:
 - "d" does not appear as a substring in "abc".
 3 of the strings in patterns appear as a substring in word.
 '''
+<<<<<<< HEAD
 from typing import List
 def numOfStrings(patterns: List[str], word: str) -> int:
     count = 0
@@ -28,3 +29,17 @@ patterns = ["a","abc","bc","d"]
 word = "abc"
 print(numOfStrings(patterns, word))
  
+=======
+
+from typing import List
+def numOfStrings(self, patterns: List[str], word: str) -> int:
+        count = 0
+        for item in patterns:
+            if item in word:
+                count =  count + 1
+        return count
+
+patterns = ["a","abc","bc","d"]
+word = "abc"
+print(numOfStrings(patterns, word))
+>>>>>>> 1697f82 (misssing solution from day4)
